@@ -57,3 +57,10 @@ To run the tests
 ```bash
 deno task test
 ```
+
+### Tech Stack
+
+- Deno
+- Hono
+- Uniquery
+- Valibot
