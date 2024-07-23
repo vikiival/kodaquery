@@ -1,0 +1,99 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@hono/hono@^4.5.1": "jsr:@hono/hono@4.5.1",
+      "jsr:@std/assert@1.0.0-rc.2": "jsr:@std/assert@1.0.0-rc.2",
+      "jsr:@std/assert@^1.0.0": "jsr:@std/assert@1.0.0",
+      "jsr:@std/expect@^0.224.5": "jsr:@std/expect@0.224.5",
+      "jsr:@std/internal@^1.0.0": "jsr:@std/internal@1.0.1",
+      "jsr:@std/internal@^1.0.1": "jsr:@std/internal@1.0.1",
+      "jsr:@valibot/valibot@^0.36.0": "jsr:@valibot/valibot@0.36.0",
+      "npm:@kodadot1/uniquery@^0.5.1": "npm:@kodadot1/uniquery@0.5.1"
+    },
+    "jsr": {
+      "@hono/hono@4.5.1": {
+        "integrity": "459748ed4d4146c6e4bdff0213ff1ac44749904066ae02e7550d6c7f28c9bc4c"
+      },
+      "@std/assert@1.0.0": {
+        "integrity": "0e4f6d873f7f35e2a1e6194ceee39686c996b9e5d134948e644d35d4c4df2008",
+        "dependencies": [
+          "jsr:@std/internal@^1.0.1"
+        ]
+      },
+      "@std/assert@1.0.0-rc.2": {
+        "integrity": "0484eab1d76b55fca1c3beaff485a274e67dd3b9f065edcbe70030dfc0b964d3",
+        "dependencies": [
+          "jsr:@std/internal@^1.0.0"
+        ]
+      },
+      "@std/expect@0.224.5": {
+        "integrity": "ae6e57ee6f23a2fd5ae130cb84448eef182354cb902e1a2a98d64c72ac3a5a1c",
+        "dependencies": [
+          "jsr:@std/assert@1.0.0-rc.2",
+          "jsr:@std/internal@^1.0.0"
+        ]
+      },
+      "@std/internal@1.0.1": {
+        "integrity": "6f8c7544d06a11dd256c8d6ba54b11ed870aac6c5aeafff499892662c57673e6"
+      },
+      "@valibot/valibot@0.36.0": {
+        "integrity": "36139cd850af78a876b9d9abf904a8d48c559374ce64e5a5b309dfea460a16ed"
+      }
+    },
+    "npm": {
+      "@kodadot1/static@0.0.4": {
+        "integrity": "sha512-91HlWsm1RWaQCWeeEnyQohCOJ523XaDF8njCC2xfJCsi5Ae5mW84iqt+m+MI5ZicMld07Ejuuo/YYZ8TDUUK4Q==",
+        "dependencies": {}
+      },
+      "@kodadot1/uniquery@0.5.1": {
+        "integrity": "sha512-7PTOgXr/ME5dev4uBNtIgEOZUFEZi0t+TWnL17tOpUMaT3mFYBx59s6coWe8vnHyu30ekTejpLAl8M2+u17lGg==",
+        "dependencies": {
+          "@kodadot1/static": "@kodadot1/static@0.0.4",
+          "gql-query-builder": "gql-query-builder@3.8.0",
+          "ofetch": "ofetch@1.3.4",
+          "scule": "scule@1.3.0",
+          "ufo": "ufo@1.5.4"
+        }
+      },
+      "destr@2.0.3": {
+        "integrity": "sha512-2N3BOUU4gYMpTP24s5rF5iP7BDr7uNTCs4ozw3kf/eKfvWSIu93GEBi5m427YoyJoeOzQ5smuu4nNAPGb8idSQ==",
+        "dependencies": {}
+      },
+      "gql-query-builder@3.8.0": {
+        "integrity": "sha512-q0PncZTrLDeyiH4R7YH1ISM+XGB4NvQ8eTm/Wr/sHSuquFZvqvDpGyMhbgoCZDc8kNAK8GOdfh3nI2GCLREFvw==",
+        "dependencies": {}
+      },
+      "node-fetch-native@1.6.4": {
+        "integrity": "sha512-IhOigYzAKHd244OC0JIMIUrjzctirCmPkaIfhDeGcEETWof5zKYUW7e7MYvChGWh/4CJeXEgsRyGzuF334rOOQ==",
+        "dependencies": {}
+      },
+      "ofetch@1.3.4": {
+        "integrity": "sha512-KLIET85ik3vhEfS+3fDlc/BAZiAp+43QEC/yCo5zkNoY2YaKvNkOaFr/6wCFgFH1kuYQM5pMNi0Tg8koiIemtw==",
+        "dependencies": {
+          "destr": "destr@2.0.3",
+          "node-fetch-native": "node-fetch-native@1.6.4",
+          "ufo": "ufo@1.5.4"
+        }
+      },
+      "scule@1.3.0": {
+        "integrity": "sha512-6FtHJEvt+pVMIB9IBY+IcCJ6Z5f1iQnytgyfKMhDKgmzYG+TeH/wx1y3l27rshSbLiSanrR9ffZDrEsmjlQF2g==",
+        "dependencies": {}
+      },
+      "ufo@1.5.4": {
+        "integrity": "sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {},
+  "workspace": {
+    "dependencies": [
+      "jsr:@hono/hono@^4.5.1",
+      "jsr:@std/assert@^1.0.0",
+      "jsr:@std/expect@^0.224.5",
+      "jsr:@valibot/valibot@^0.36.0",
+      "npm:@kodadot1/uniquery@^0.5.1"
+    ]
+  }
+}
