@@ -17,6 +17,7 @@ Deno.test('GET /collections/:id', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('collection')
+  expect(data.collection).not.toBeNull()
 })
 
 Deno.test('GET /collections/issuer/:address', async () => {
@@ -24,6 +25,7 @@ Deno.test('GET /collections/issuer/:address', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('collections')
+  expect(data.collections).not.toBe([])
 })
 
 Deno.test('GET /collections/name/:name', async () => {
@@ -31,6 +33,7 @@ Deno.test('GET /collections/name/:name', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('collections')
+  expect(data.collections).not.toBe([])
 })
 
 Deno.test('GET /collections/owner/:address', async () => {
@@ -38,6 +41,7 @@ Deno.test('GET /collections/owner/:address', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('collections')
+  expect(data.collections).not.toBe([])
 })
 
 Deno.test('GET /events', async () => {
@@ -45,6 +49,7 @@ Deno.test('GET /events', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('events')
+  expect(data.events).not.toBe([])
 })
 
 Deno.test('GET /events/address/:address', async () => {
@@ -52,6 +57,7 @@ Deno.test('GET /events/address/:address', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('events')
+  expect(data.events).not.toBe([])
 })
 
 Deno.test('GET /events/collection/:id', async () => {
@@ -59,6 +65,7 @@ Deno.test('GET /events/collection/:id', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('events')
+  expect(data.events).not.toBe([])
 })
 
 Deno.test('GET /events/interaction/:interaction', async () => {
@@ -66,6 +73,7 @@ Deno.test('GET /events/interaction/:interaction', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('events')
+  expect(data.events).not.toBe([])
 })
 
 Deno.test('GET /events/item/:id', async () => {
@@ -73,6 +81,7 @@ Deno.test('GET /events/item/:id', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('events')
+  expect(data.events).not.toBe([])
 })
 
 Deno.test('GET /items/:id', async () => {
@@ -80,6 +89,7 @@ Deno.test('GET /items/:id', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('item')
+  expect(data.item).not.toBeNull()
 })
 
 Deno.test('GET /items/collection/:id', async () => {
@@ -87,6 +97,7 @@ Deno.test('GET /items/collection/:id', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('items')
+  expect(data.items).not.toBe([])
 })
 
 Deno.test('GET /items/collection/:id/owner/:address', async () => {
@@ -94,6 +105,7 @@ Deno.test('GET /items/collection/:id/owner/:address', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('items')
+  expect(data.items).not.toBe([])
 })
 
 Deno.test('POST /items/collections', async () => {
@@ -104,6 +116,7 @@ Deno.test('POST /items/collections', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('items')
+  expect(data.items).not.toBe([])
 })
 
 Deno.test('GET /items/issuer/:address', async () => {
@@ -111,6 +124,7 @@ Deno.test('GET /items/issuer/:address', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('items')
+  expect(data.items).not.toBe([])
 })
 
 Deno.test('GET /items/name/:name', async () => {
@@ -118,6 +132,7 @@ Deno.test('GET /items/name/:name', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('items')
+  expect(data.items).not.toBe([])
 })
 
 Deno.test('GET /items/metadata/:id', async () => {
@@ -125,6 +140,7 @@ Deno.test('GET /items/metadata/:id', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('items')
+  expect(data.items).not.toBe([])
 })
 
 Deno.test('GET /items/metadata/match/:cid', async () => {
@@ -132,6 +148,7 @@ Deno.test('GET /items/metadata/match/:cid', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('items')
+  expect(data.items).not.toBe([])
 })
 
 Deno.test('GET /items/owner/:address', async () => {
@@ -139,4 +156,5 @@ Deno.test('GET /items/owner/:address', async () => {
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('items')
+  expect(data.items).not.toBe([])
 })
