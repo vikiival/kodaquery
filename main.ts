@@ -1,6 +1,6 @@
 import { Hono } from '@hono/hono'
 import { getClient } from '@kodadot1/uniquery'
-import { object, number, string, optional, parse } from '@valibot/valibot'
+import { number, object, optional, parse, string } from '@valibot/valibot'
 
 const app = new Hono()
 

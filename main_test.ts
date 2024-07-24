@@ -1,7 +1,5 @@
-// import { assertEquals } from "@std/assert";
-import { expect } from "@std/expect";
-import app from "./main.ts";
-// import { add } from "./main.ts";
+import { expect } from '@std/expect'
+import app from './main.ts'
 
 // global config
 const CHAIN = 'ahp'
@@ -101,7 +99,9 @@ Deno.test('GET /items/collection/:id', async () => {
 })
 
 Deno.test('GET /items/collection/:id/owner/:address', async () => {
-  const res = await app.request(`/${CHAIN}/items/collection/${COLLECTION_ID}/owner/${ADDRESS}`)
+  const res = await app.request(
+    `/${CHAIN}/items/collection/${COLLECTION_ID}/owner/${ADDRESS}`,
+  )
   expect(res.status).toBe(200)
   const { data } = await res.json()
   expect(data).toHaveProperty('items')
